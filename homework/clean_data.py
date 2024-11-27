@@ -1,5 +1,3 @@
-"""Taller evaluable presencial"""
-
 import pandas as pd  # type: ignore
 
 
@@ -83,6 +81,7 @@ def main(input_file, output_file, n=2):
     df = create_key(df, n)
     df = generate_cleaned_column(df)
     df.to_csv("files/test.csv", index=False)
+    df.to_csv("files/output/test.csv", index=False)
     save_data(df, output_file)
 
 
